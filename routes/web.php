@@ -11,7 +11,7 @@ use Illuminate\Validation\ValidationException;
 
 //find a post by its slug and pass it to a view called "post"
 Route::get('/', [PostController::class, 'index'])->name('home');
-
+//hello world
 Route::get('posts/{post:slug}', [PostController::class, 'show']);
 Route::post('posts/{post:slug}/comments',[PostCommentsController::class, 'store']);
 
